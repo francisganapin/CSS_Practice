@@ -1,0 +1,38 @@
+<header class="responsive-header">
+    <h1 class="logo">MySite</h1>
+    <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="hamburger">☰</div>
+</header>
+
+<style>
+    .responsive-header{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 30px;
+        background-color:#1a1a1a;
+        color:white;
+    }
+    .nav-link{
+        display:flex;
+        gap:20px;
+    }
+    .hamburger{
+        display:none;
+        font-size:24px;
+        cursor:pointer;
+    }
+    @media(max-width:768px){
+        .nav-linl{
+            display:none;
+        }
+        .hamburger{
+            display:block;
+        }
+    }
+</style>
